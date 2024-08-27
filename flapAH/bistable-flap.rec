@@ -1,0 +1,708 @@
+# -*- coding: mbcs -*-
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.jobs['chkflap']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': '10FPVQ1S2', 'handle': 0, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\temp\\flap\\chkflap.odb', 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': '10FPVQ1S2', 'handle': 16768, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'The local-3 direction (after additional rotation and permutation) of the material orientation , specified via *ORIENTATION, is in the plane of the SHELL, MEMBRANE, GASKET, COHESIVE, or SURFACE element. The local-1 direction will be projected onto the element surface and the positive element normal will be used as the local-3 direction. The elements have been identified in element set WarnElemUserNormMatOrient.', 
+    'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 0, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'memory': 118.0, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(PHYSICAL_MEMORY, {'phase': STANDARD_PHASE, 
+    'physical_memory': 32655.0, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(MINIMUM_MEMORY, {'minimum_memory': 27.0, 
+    'phase': STANDARD_PHASE, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.0001, 'increment': 1, 
+    'attempts': 1, 'iterations': 2, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0001, 'stepTime': 0.0001, 'step': 1, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 2})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 1, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.0002, 'increment': 2, 
+    'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0001, 'stepTime': 0.0002, 'step': 1, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 2, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.00035, 'increment': 3, 
+    'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00015, 'stepTime': 0.00035, 'step': 1, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 3, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.000575, 'increment': 4, 
+    'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.000225, 'stepTime': 0.000575, 'step': 1, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 4, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.0009125, 'increment': 5, 
+    'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0003375, 'stepTime': 0.0009125, 'step': 1, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 5, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.00141875, 'increment': 6, 
+    'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00050625, 'stepTime': 0.00141875, 'step': 1, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 6, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.002178125, 'increment': 7, 
+    'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.000759375, 'stepTime': 0.002178125, 'step': 1, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 7, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.0033171875, 
+    'increment': 8, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0011390625, 'stepTime': 0.0033171875, 'step': 1, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 8, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.00502578125, 
+    'increment': 9, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00170859375, 'stepTime': 0.00502578125, 'step': 1, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 9, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.007588671875, 
+    'increment': 10, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.002562890625, 'stepTime': 0.007588671875, 'step': 1, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 10, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.0114330078125, 
+    'increment': 11, 'attempts': 1, 'iterations': 2, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0038443359375, 'stepTime': 0.0114330078125, 'step': 1, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 2})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 11, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.01719951171875, 
+    'increment': 12, 'attempts': 1, 'iterations': 2, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00576650390625, 'stepTime': 0.01719951171875, 'step': 1, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 2})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 12, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.025849267578125, 
+    'increment': 13, 'attempts': 1, 'iterations': 2, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.008649755859375, 'stepTime': 0.025849267578125, 
+    'step': 1, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 2})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 13, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.0388239013671875, 
+    'increment': 14, 'attempts': 1, 'iterations': 2, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0129746337890625, 'stepTime': 0.0388239013671875, 
+    'step': 1, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 2})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 14, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.0582858520507812, 
+    'increment': 15, 'attempts': 1, 'iterations': 3, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0194619506835937, 'stepTime': 0.0582858520507812, 
+    'step': 1, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 3})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 15, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.0874787780761719, 
+    'increment': 16, 'attempts': 1, 'iterations': 3, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0291929260253906, 'stepTime': 0.0874787780761719, 
+    'step': 1, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 3})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 16, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.131268167114258, 
+    'increment': 17, 'attempts': 1, 'iterations': 3, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0437893890380859, 'stepTime': 0.131268167114258, 
+    'step': 1, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 3})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 17, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.196952250671387, 
+    'increment': 18, 'attempts': 1, 'iterations': 3, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0656840835571289, 'stepTime': 0.196952250671387, 
+    'step': 1, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 3})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 18, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.29547837600708, 
+    'increment': 19, 'attempts': 1, 'iterations': 4, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0985261253356934, 'stepTime': 0.29547837600708, 
+    'step': 1, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 4})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 19, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.39547837600708, 
+    'increment': 20, 'attempts': 1, 'iterations': 4, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.1, 'stepTime': 0.39547837600708, 'step': 1, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 4})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 20, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.49547837600708, 
+    'increment': 21, 'attempts': 1, 'iterations': 3, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.1, 'stepTime': 0.49547837600708, 'step': 1, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 3})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 21, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.59547837600708, 
+    'increment': 22, 'attempts': 1, 'iterations': 3, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.1, 'stepTime': 0.59547837600708, 'step': 1, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 3})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 22, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.69547837600708, 
+    'increment': 23, 'attempts': 1, 'iterations': 3, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.1, 'stepTime': 0.69547837600708, 'step': 1, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 3})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 23, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.79547837600708, 
+    'increment': 24, 'attempts': 1, 'iterations': 3, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.1, 'stepTime': 0.79547837600708, 'step': 1, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 3})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 24, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.89547837600708, 
+    'increment': 25, 'attempts': 1, 'iterations': 2, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.1, 'stepTime': 0.89547837600708, 'step': 1, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 2})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 25, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 0.99547837600708, 
+    'increment': 26, 'attempts': 1, 'iterations': 2, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.1, 'stepTime': 0.99547837600708, 'step': 1, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 2})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 26, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 0, 
+    'frame': 27, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.0, 'increment': 27, 
+    'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00452162399292008, 'stepTime': 1.0, 'step': 1, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 1, 
+    'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 2, 
+    'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 0, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'memory': 118.0, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(PHYSICAL_MEMORY, {'phase': STANDARD_PHASE, 
+    'physical_memory': 32655.0, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(MINIMUM_MEMORY, {'minimum_memory': 27.0, 
+    'phase': STANDARD_PHASE, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.00001, 'increment': 1, 
+    'attempts': 1, 'iterations': 3, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 1e-05, 'stepTime': 1e-05, 'step': 2, 'jobName': 'chkflap', 
+    'severe': 0, 'equilibrium': 3})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 1, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.00002, 'increment': 2, 
+    'attempts': 1, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 1e-05, 'stepTime': 2e-05, 'step': 2, 'jobName': 'chkflap', 
+    'severe': 0, 'equilibrium': 5})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 2, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.00003, 'increment': 3, 
+    'attempts': 1, 'iterations': 2, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 1e-05, 'stepTime': 3e-05, 'step': 2, 'jobName': 'chkflap', 
+    'severe': 0, 'equilibrium': 2})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 3, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.00004, 'increment': 4, 
+    'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 1e-05, 'stepTime': 4e-05, 'step': 2, 'jobName': 'chkflap', 
+    'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 4, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.000055, 'increment': 5, 
+    'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 1.5e-05, 'stepTime': 5.5e-05, 'step': 2, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 5, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.0000775, 'increment': 6, 
+    'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 2.25e-05, 'stepTime': 7.75e-05, 'step': 2, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 6, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.00011125, 'increment': 7, 
+    'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 3.375e-05, 'stepTime': 0.00011125, 'step': 2, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 7, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.000161875, 'increment': 8, 
+    'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 5.0625e-05, 'stepTime': 0.000161875, 'step': 2, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 8, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.0002378125, 
+    'increment': 9, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 7.59375e-05, 'stepTime': 0.0002378125, 'step': 2, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 9, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.00035171875, 
+    'increment': 10, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00011390625, 'stepTime': 0.00035171875, 'step': 2, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 10, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.000522578125, 
+    'increment': 11, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.000170859375, 'stepTime': 0.000522578125, 'step': 2, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 11, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.0007788671875, 
+    'increment': 12, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0002562890625, 'stepTime': 0.0007788671875, 'step': 2, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 12, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.00116330078125, 
+    'increment': 13, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00038443359375, 'stepTime': 0.00116330078125, 'step': 2, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 13, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.00173995117188, 
+    'increment': 14, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.000576650390625, 'stepTime': 0.001739951171875, 
+    'step': 2, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 14, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.00260492675781, 
+    'increment': 15, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0008649755859375, 'stepTime': 0.0026049267578125, 
+    'step': 2, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 15, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.00390239013672, 
+    'increment': 16, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00129746337890625, 'stepTime': 0.00390239013671875, 
+    'step': 2, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 16, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.00584858520508, 
+    'increment': 17, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00194619506835938, 'stepTime': 0.00584858520507813, 
+    'step': 2, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 17, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.00876787780762, 
+    'increment': 18, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00291929260253906, 'stepTime': 0.00876787780761719, 
+    'step': 2, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 18, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.01314681671143, 
+    'increment': 19, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0043789389038086, 'stepTime': 0.0131468167114258, 
+    'step': 2, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 19, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.01971522506714, 
+    'increment': 20, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00656840835571289, 'stepTime': 0.0197152250671387, 
+    'step': 2, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 20, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.02956783760071, 
+    'increment': 21, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00985261253356934, 'stepTime': 0.029567837600708, 
+    'step': 2, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 21, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.04434675640106, 
+    'increment': 22, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.014778918800354, 'stepTime': 0.044346756401062, 
+    'step': 2, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 22, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.06651513460159, 
+    'increment': 23, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.022168378200531, 'stepTime': 0.066515134601593, 
+    'step': 2, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 23, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.09976770190239, 
+    'increment': 24, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0332525673007965, 'stepTime': 0.0997677019023895, 
+    'step': 2, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 24, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.14964655285359, 
+    'increment': 25, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0498788509511948, 'stepTime': 0.149646552853584, 
+    'step': 2, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 25, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.22446482928038, 
+    'increment': 26, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0748182764267922, 'stepTime': 0.224464829280376, 
+    'step': 2, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 26, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.32446482928038, 
+    'increment': 27, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.1, 'stepTime': 0.324464829280376, 'step': 2, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 27, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.42446482928038, 
+    'increment': 28, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.1, 'stepTime': 0.424464829280376, 'step': 2, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 28, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.52446482928038, 
+    'increment': 29, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.1, 'stepTime': 0.524464829280376, 'step': 2, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 29, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.62446482928038, 
+    'increment': 30, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.1, 'stepTime': 0.624464829280376, 'step': 2, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 30, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.72446482928038, 
+    'increment': 31, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.1, 'stepTime': 0.724464829280376, 'step': 2, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 31, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.82446482928038, 
+    'increment': 32, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.1, 'stepTime': 0.824464829280376, 'step': 2, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 32, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 1.92446482928038, 
+    'increment': 33, 'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.1, 'stepTime': 0.924464829280376, 'step': 2, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 33, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 1, 
+    'frame': 34, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.0, 'increment': 34, 
+    'attempts': 1, 'iterations': 1, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0755351707196237, 'stepTime': 1.0, 'step': 2, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 1})
+mdb.jobs['chkflap']._Message(END_STEP, {'phase': STANDARD_PHASE, 'stepId': 2, 
+    'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STEP, {'phase': STANDARD_PHASE, 'stepId': 3, 
+    'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 0, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'memory': 118.0, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(PHYSICAL_MEMORY, {'phase': STANDARD_PHASE, 
+    'physical_memory': 32655.0, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(MINIMUM_MEMORY, {'minimum_memory': 27.0, 
+    'phase': STANDARD_PHASE, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.0, 'increment': 1, 
+    'attempts': ' 1U', 'iterations': 4, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.01, 'stepTime': 0.0, 'step': 3, 'jobName': 'chkflap', 
+    'severe': 0, 'equilibrium': 4})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.0025, 'increment': 1, 
+    'attempts': 2, 'iterations': 4, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0025, 'stepTime': 0.0025, 'step': 3, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 4})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 1, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.005, 'increment': 2, 
+    'attempts': 1, 'iterations': 2, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0025, 'stepTime': 0.005, 'step': 3, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 2})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 2, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.00875, 'increment': 3, 
+    'attempts': 1, 'iterations': 2, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00375, 'stepTime': 0.00875, 'step': 3, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 2})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 3, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.014375, 'increment': 4, 
+    'attempts': 1, 'iterations': 4, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.005625, 'stepTime': 0.014375, 'step': 3, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 4})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 4, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.0228125, 'increment': 5, 
+    'attempts': 1, 'iterations': 10, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0084375, 'stepTime': 0.0228125, 'step': 3, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 10})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 5, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.0228125, 'increment': 6, 
+    'attempts': ' 1U', 'iterations': 9, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0084375, 'stepTime': 0.0228125, 'step': 3, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 9})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.02703125, 'increment': 6, 
+    'attempts': 2, 'iterations': 6, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00421875, 'stepTime': 0.02703125, 'step': 3, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 6})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 6, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.03125, 'increment': 7, 
+    'attempts': 1, 'iterations': 4, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00421875, 'stepTime': 0.03125, 'step': 3, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 4})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 7, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'The system matrix has 3 negative eigenvalues.', 
+    'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.03125, 'increment': 8, 
+    'attempts': ' 1U', 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00421875, 'stepTime': 0.03125, 'step': 3, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 5})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.0323046875, 
+    'increment': 8, 'attempts': 2, 'iterations': 2, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0010546875, 'stepTime': 0.0323046875, 'step': 3, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 2})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 8, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.03388671875, 
+    'increment': 9, 'attempts': 1, 'iterations': 4, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00158203125, 'stepTime': 0.03388671875, 'step': 3, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 4})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 9, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'The system matrix has 2 negative eigenvalues.', 
+    'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.03388671875, 
+    'increment': 10, 'attempts': ' 1U', 'iterations': 9, 
+    'phase': STANDARD_PHASE, 'timeIncrement': 0.002373046875, 
+    'stepTime': 0.03388671875, 'step': 3, 'jobName': 'chkflap', 'severe': 0, 
+    'equilibrium': 9})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.03447998046875, 
+    'increment': 10, 'attempts': 2, 'iterations': 2, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00059326171875, 'stepTime': 0.03447998046875, 'step': 3, 
+    'jobName': 'chkflap', 'severe': 0, 'equilibrium': 2})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 10, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.03536987304688, 
+    'increment': 11, 'attempts': 1, 'iterations': 2, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.000889892578125, 'stepTime': 0.035369873046875, 
+    'step': 3, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 2})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 11, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'The system matrix has 2 negative eigenvalues.', 
+    'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'The system matrix has 10 negative eigenvalues.', 
+    'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.03536987304688, 
+    'increment': 12, 'attempts': ' 1U', 'iterations': 9, 
+    'phase': STANDARD_PHASE, 'timeIncrement': 0.0013348388671875, 
+    'stepTime': 0.035369873046875, 'step': 3, 'jobName': 'chkflap', 
+    'severe': 0, 'equilibrium': 9})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.03603729248047, 
+    'increment': 12, 'attempts': 2, 'iterations': 2, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00066741943359375, 'stepTime': 0.0360372924804687, 
+    'step': 3, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 2})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 12, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.03703842163086, 
+    'increment': 13, 'attempts': 1, 'iterations': 6, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00100112915039063, 'stepTime': 0.0370384216308594, 
+    'step': 3, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 6})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 13, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.03803955078125, 
+    'increment': 14, 'attempts': 1, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00100112915039063, 'stepTime': 0.03803955078125, 
+    'step': 3, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 5})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 14, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.03904067993164, 
+    'increment': 15, 'attempts': 1, 'iterations': 4, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00100112915039063, 'stepTime': 0.0390406799316406, 
+    'step': 3, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 4})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 15, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.04004180908203, 
+    'increment': 16, 'attempts': 1, 'iterations': 4, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00100112915039063, 'stepTime': 0.0400418090820313, 
+    'step': 3, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 4})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 16, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.04154350280762, 
+    'increment': 17, 'attempts': 1, 'iterations': 6, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00150169372558594, 'stepTime': 0.0415435028076172, 
+    'step': 3, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 6})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 17, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.0430451965332, 
+    'increment': 18, 'attempts': 1, 'iterations': 4, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00150169372558594, 'stepTime': 0.0430451965332031, 
+    'step': 3, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 4})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 18, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.04454689025879, 
+    'increment': 19, 'attempts': 1, 'iterations': 5, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00150169372558594, 'stepTime': 0.0445468902587891, 
+    'step': 3, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 5})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 19, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.04604858398438, 
+    'increment': 20, 'attempts': 1, 'iterations': 2, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00150169372558594, 'stepTime': 0.046048583984375, 
+    'step': 3, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 2})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 20, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.04755027770996, 
+    'increment': 21, 'attempts': 1, 'iterations': 2, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00150169372558594, 'stepTime': 0.0475502777099609, 
+    'step': 3, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 2})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 21, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.04980281829834, 
+    'increment': 22, 'attempts': 1, 'iterations': 2, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00225254058837891, 'stepTime': 0.0498028182983398, 
+    'step': 3, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 2})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 22, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.05318162918091, 
+    'increment': 23, 'attempts': 1, 'iterations': 3, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00337881088256836, 'stepTime': 0.0531816291809082, 
+    'step': 3, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 3})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 23, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.05824984550476, 
+    'increment': 24, 'attempts': 1, 'iterations': 4, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00506821632385254, 'stepTime': 0.0582498455047607, 
+    'step': 3, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 4})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 24, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.06585216999054, 
+    'increment': 25, 'attempts': 1, 'iterations': 4, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00760232448577881, 'stepTime': 0.0658521699905396, 
+    'step': 3, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 4})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 25, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.07725565671921, 
+    'increment': 26, 'attempts': 1, 'iterations': 4, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0114034867286682, 'stepTime': 0.0772556567192078, 
+    'step': 3, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 4})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 26, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.09436088681221, 
+    'increment': 27, 'attempts': 1, 'iterations': 6, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0171052300930023, 'stepTime': 0.0943608868122101, 
+    'step': 3, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 6})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 27, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.11146611690521, 
+    'increment': 28, 'attempts': 1, 'iterations': 4, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0171052300930023, 'stepTime': 0.111466116905212, 
+    'step': 3, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 4})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 28, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'The system matrix has 1 negative eigenvalues.', 
+    'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'The system matrix has 2 negative eigenvalues.', 
+    'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.11146611690521, 
+    'increment': 29, 'attempts': ' 1U', 'iterations': 6, 
+    'phase': STANDARD_PHASE, 'timeIncrement': 0.0171052300930023, 
+    'stepTime': 0.111466116905212, 'step': 3, 'jobName': 'chkflap', 
+    'severe': 0, 'equilibrium': 6})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.11574242442846, 
+    'increment': 29, 'attempts': 2, 'iterations': 3, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00427630752325058, 'stepTime': 0.115742424428463, 
+    'step': 3, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 3})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 29, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.12215688571334, 
+    'increment': 30, 'attempts': 1, 'iterations': 2, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00641446128487587, 'stepTime': 0.122156885713339, 
+    'step': 3, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 2})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 30, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.12215688571334, 
+    'increment': 31, 'attempts': ' 1U', 'iterations': 9, 
+    'phase': STANDARD_PHASE, 'timeIncrement': 0.00962169192731381, 
+    'stepTime': 0.122156885713339, 'step': 3, 'jobName': 'chkflap', 
+    'severe': 0, 'equilibrium': 9})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.126967731677, 
+    'increment': 31, 'attempts': 2, 'iterations': 2, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.0048108459636569, 'stepTime': 0.126967731676996, 
+    'step': 3, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 2})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 31, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.13418400062248, 
+    'increment': 32, 'attempts': 1, 'iterations': 2, 'phase': STANDARD_PHASE, 
+    'timeIncrement': 0.00721626894548536, 'stepTime': 0.134184000622481, 
+    'step': 3, 'jobName': 'chkflap', 'severe': 0, 'equilibrium': 2})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 32, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.13418400062248, 
+    'increment': 33, 'attempts': ' 1U', 'iterations': 5, 
+    'phase': STANDARD_PHASE, 'timeIncrement': 0.010824403418228, 
+    'stepTime': 0.134184000622481, 'step': 3, 'jobName': 'chkflap', 
+    'severe': 0, 'equilibrium': 5})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.13418400062248, 
+    'increment': 33, 'attempts': ' 2U', 'iterations': 5, 
+    'phase': STANDARD_PHASE, 'timeIncrement': 0.00270610085455701, 
+    'stepTime': 0.134184000622481, 'step': 3, 'jobName': 'chkflap', 
+    'severe': 0, 'equilibrium': 5})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.13418400062248, 
+    'increment': 33, 'attempts': ' 3U', 'iterations': 5, 
+    'phase': STANDARD_PHASE, 'timeIncrement': 0.000676525213639252, 
+    'stepTime': 0.134184000622481, 'step': 3, 'jobName': 'chkflap', 
+    'severe': 0, 'equilibrium': 5})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.13418400062248, 
+    'increment': 33, 'attempts': ' 4U', 'iterations': 5, 
+    'phase': STANDARD_PHASE, 'timeIncrement': 0.000169131303409813, 
+    'stepTime': 0.134184000622481, 'step': 3, 'jobName': 'chkflap', 
+    'severe': 0, 'equilibrium': 5})
+mdb.jobs['chkflap']._Message(STATUS, {'totalTime': 2.13418400062248, 
+    'increment': 33, 'attempts': ' 5U', 'iterations': 5, 
+    'phase': STANDARD_PHASE, 'timeIncrement': 4.22828258524533e-05, 
+    'stepTime': 0.134184000622481, 'step': 3, 'jobName': 'chkflap', 
+    'severe': 0, 'equilibrium': 5})
+mdb.jobs['chkflap']._Message(ERROR, {'phase': STANDARD_PHASE, 
+    'message': 'Too many attempts made for this increment', 
+    'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 'step': 2, 
+    'frame': 33, 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(ERROR, {'phase': STANDARD_PHASE, 
+    'message': 'THE ANALYSIS HAS BEEN TERMINATED DUE TO PREVIOUS ERRORS. ALL OUTPUT REQUESTS HAVE BEEN WRITTEN FOR THE LAST CONVERGED INCREMENT.', 
+    'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(ABORTED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase failed due to errors', 'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(ERROR, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'chkflap'})
+mdb.jobs['chkflap']._Message(JOB_ABORTED, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'chkflap'})

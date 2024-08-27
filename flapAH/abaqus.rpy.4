@@ -1,0 +1,75 @@
+# -*- coding: mbcs -*-
+#
+# Abaqus/Viewer Release 2021 replay file
+# Internal Version: 2020_03_06-14.50.37 167380
+# Run by Ayan.Haldar on Thu Apr 18 16:08:00 2024
+#
+
+# from driverUtils import executeOnCaeGraphicsStartup
+# executeOnCaeGraphicsStartup()
+#: Executing "onCaeGraphicsStartup()" in the site directory ...
+#: Warning: Permission was denied for "abaqus.rpy"; "abaqus.rpy.4" will be used for this session's replay file.
+from abaqus import *
+from abaqusConstants import *
+session.Viewport(name='Viewport: 1', origin=(0.0, 0.0), width=119.91145324707, 
+    height=186.977783203125)
+session.viewports['Viewport: 1'].makeCurrent()
+session.viewports['Viewport: 1'].maximize()
+from viewerModules import *
+from driverUtils import executeOnCaeStartup
+executeOnCaeStartup()
+o2 = session.openOdb(name='chkflap.odb')
+#: Model: C:/temp/flap/chkflap.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     1
+#: Number of Meshes:             1
+#: Number of Element Sets:       6
+#: Number of Node Sets:          7
+#: Number of Steps:              4
+session.viewports['Viewport: 1'].setValues(displayedObject=o2)
+session.viewports['Viewport: 1'].makeCurrent()
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=0.690697, 
+    farPlane=1.12729, width=0.545749, height=0.272831, cameraPosition=(
+    0.198889, -0.54211, 0.532358), cameraUpVector=(-0.866905, 0.472314, 
+    0.159357), cameraTarget=(0.0578483, 0.0455048, -0.118601))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=0.734444, 
+    farPlane=1.09493, width=0.580315, height=0.290111, cameraPosition=(
+    0.176622, -0.80464, 0.121247), cameraUpVector=(-0.151703, 0.568121, 
+    0.808842), cameraTarget=(0.0573394, 0.0395046, -0.127997))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=0.67059, 
+    farPlane=1.15032, width=0.529861, height=0.264888, cameraPosition=(
+    0.353357, 0.681575, 0.469823), cameraUpVector=(-0.584626, 0.451187, 
+    -0.674272), cameraTarget=(0.0624538, 0.0825127, -0.11791))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=0.665866, 
+    farPlane=1.15241, width=0.526128, height=0.263022, cameraPosition=(
+    0.415172, 0.31956, 0.664747), cameraUpVector=(-0.129308, 0.806362, 
+    -0.577113), cameraTarget=(0.0639636, 0.0736706, -0.113149))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=0.681713, 
+    farPlane=1.13109, width=0.538649, height=0.269282, cameraPosition=(
+    0.248839, 0.333972, 0.716126), cameraUpVector=(0.0464297, 0.787012, 
+    -0.615188), cameraTarget=(0.0601361, 0.0740022, -0.111967))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=0.698092, 
+    farPlane=1.10822, width=0.551591, height=0.275752, cameraPosition=(
+    0.0252032, 0.387649, 0.718935), cameraUpVector=(0.237678, 0.742043, 
+    -0.626803), cameraTarget=(0.0556497, 0.075079, -0.111911))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=0.692275, 
+    farPlane=1.1109, width=0.546995, height=0.273454, cameraPosition=(
+    -0.032827, 0.227051, 0.759018), cameraUpVector=(0.0246985, 0.870065, 
+    -0.492318), cameraTarget=(0.0546899, 0.0724228, -0.111248))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=0.693665, 
+    farPlane=1.11038, width=0.548094, height=0.274003, cameraPosition=(
+    -0.0161753, 0.270357, 0.75175), cameraUpVector=(0.0790437, 0.844573, 
+    -0.529575), cameraTarget=(0.0549368, 0.073065, -0.111356))
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=2, frame=32 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=2, frame=0 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=2, frame=1 )
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=2, frame=33 )
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_UNDEF, CONTOURS_ON_DEF, ))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=0.668939, 
+    farPlane=1.14108, width=0.528557, height=0.264236, cameraPosition=(
+    0.270359, 0.392582, 0.689918), cameraUpVector=(-0.151035, 0.761208, 
+    -0.630675), cameraTarget=(0.0594948, 0.0750093, -0.11234))

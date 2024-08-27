@@ -1,0 +1,194 @@
+# -*- coding: mbcs -*-
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.ModelFromInputFile(inputFileName='C:/temp/sq lattive/chk-R10-S4U4CT2.inp', 
+    name='chk-R10-S4U4CT2')
+#* Load must be created with a non-zero magnitude unless utilizing a user 
+#* subroutine.
+#* Load must be created with a non-zero magnitude unless utilizing a user 
+#* subroutine.
+mdb.Model(name='flap', objectToCopy=mdb.models['chk-R10-S4U4CT2'])
+mdb.models.changeKey(fromName='flap', toName='flap-design')
+mdb.models['flap-design'].rootAssembly.Instance(dependent=ON, name='PART-5-2', 
+    part=mdb.models['flap-design'].parts['PART-5'])
+mdb.models['flap-design'].rootAssembly.translate(instanceList=('PART-5-2', ), 
+    vector=(0.0, 0.0, -0.3))
+mdb.models['flap-design'].rootAssembly.Instance(dependent=ON, name='PART-5-3', 
+    part=mdb.models['flap-design'].parts['PART-5'])
+mdb.models['flap-design'].rootAssembly.features['PART-5-1'].suppress()
+mdb.models['flap-design'].rootAssembly.translate(instanceList=('PART-5-3', ), 
+    vector=(0.0, 0.0, -0.6))
+mdb.models['flap-design'].rootAssembly.features['PART-5-1'].resume()
+# Save by Ayan.Haldar on 2024_04_17-21.32.11; build 2021 2020_03_06-14.50.37 167380
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['flap-design'].ConstrainedSketch(name='__profile__', sheetSize=1.0)
+mdb.models['flap-design'].sketches['__profile__'].rectangle(point1=(-0.29, 0.1)
+    , point2=(-0.01, -0.6))
+mdb.models['flap-design'].Part(dimensionality=TWO_D_PLANAR, name='Part-2', 
+    type=DEFORMABLE_BODY)
+mdb.models['flap-design'].parts['Part-2'].BaseShell(sketch=
+    mdb.models['flap-design'].sketches['__profile__'])
+del mdb.models['flap-design'].sketches['__profile__']
+mdb.models['flap-design'].parts['Part-2'].seedEdgeBySize(constraint=FINER, 
+    deviationFactor=0.1, edges=
+    mdb.models['flap-design'].parts['Part-2'].edges.getSequenceFromMask((
+    '[#1 ]', ), ), size=0.004516)
+mdb.models['flap-design'].parts['Part-2'].seedEdgeBySize(constraint=FINER, 
+    deviationFactor=0.1, edges=
+    mdb.models['flap-design'].parts['Part-2'].edges.getSequenceFromMask((
+    '[#f ]', ), ), size=0.004516)
+mdb.models['flap-design'].parts['Part-2'].generateMesh()
+mdb.Model(name='flap-design-Copy', objectToCopy=mdb.models['flap-design'])
+mdb.models['flap-design-Copy'].rootAssembly.suppressFeatures(('PART-5-3', 
+    'PART-5-2', 'PART-5-1'))
+del mdb.models['flap-design-Copy'].parts['Part-2']
+del mdb.models['flap-design'].parts['Part-2']
+mdb.models['flap-design'].ConstrainedSketch(name='__profile__', sheetSize=5.0)
+mdb.models['flap-design'].sketches['__profile__'].rectangle(point1=(-0.29, 0.1)
+    , point2=(-0.01, -0.6))
+mdb.models['flap-design'].Part(dimensionality=THREE_D, name='Part-2', type=
+    DEFORMABLE_BODY)
+mdb.models['flap-design'].parts['Part-2'].BaseShell(sketch=
+    mdb.models['flap-design'].sketches['__profile__'])
+del mdb.models['flap-design'].sketches['__profile__']
+mdb.models['flap-design'].parts['Part-2'].seedEdgeBySize(constraint=FINER, 
+    deviationFactor=0.1, edges=
+    mdb.models['flap-design'].parts['Part-2'].edges.getSequenceFromMask((
+    '[#1 ]', ), ), size=0.004516)
+mdb.models['flap-design'].parts['Part-2'].seedEdgeBySize(constraint=FINER, 
+    deviationFactor=0.1, edges=
+    mdb.models['flap-design'].parts['Part-2'].edges.getSequenceFromMask((
+    '[#8 ]', ), ), size=0.0022)
+mdb.models['flap-design'].parts['Part-2'].seedEdgeBySize(constraint=FINER, 
+    deviationFactor=0.1, edges=
+    mdb.models['flap-design'].parts['Part-2'].edges.getSequenceFromMask((
+    '[#8 ]', ), ), size=0.009)
+mdb.models['flap-design'].parts['Part-2'].generateMesh()
+mdb.models['flap-design'].rootAssembly.Instance(dependent=ON, name='Part-2-1', 
+    part=mdb.models['flap-design'].parts['Part-2'])
+mdb.models['flap-design'].rootAssembly.instances['Part-2-1'].translate(vector=(
+    0.318000000022352, 0.0, 0.0))
+mdb.models['flap-design'].rootAssembly.makeIndependent(instances=(
+    mdb.models['flap-design'].rootAssembly.instances['Part-2-1'], ))
+mdb.models['flap-design'].rootAssembly.makeDependent(instances=(
+    mdb.models['flap-design'].rootAssembly.instances['Part-2-1'], ))
+mdb.models['flap-design'].parts.changeKey(fromName='Part-2', toName='Plate-2')
+mdb.models['flap-design'].rootAssembly.regenerate()
+del mdb.models['flap-design'].rootAssembly.features['Part-2-1']
+mdb.models['flap-design'].rootAssembly.Instance(dependent=OFF, name='Plate-2-1'
+    , part=mdb.models['flap-design'].parts['Plate-2'])
+mdb.models['flap-design'].rootAssembly.instances['Plate-2-1'].translate(vector=
+    (0.318, 0.0, 0.0))
+mdb.models['flap-design'].rootAssembly.translate(instanceList=('Plate-2-1', ), 
+    vector=(-0.318, 0.0, 0.3))
+# Save by Ayan.Haldar on 2024_04_17-21.46.00; build 2021 2020_03_06-14.50.37 167380
+# Save by Ayan.Haldar on 2024_04_17-21.52.00; build 2021 2020_03_06-14.50.37 167380
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.models['flap-design'].parts['Plate-2'].regenerate()
+mdb.models['flap-design'].parts['Plate-2'].regenerate()
+mdb.models['flap-design'].parts['Plate-2'].regenerate()
+mdb.models['flap-design'].ConstrainedSketch(name='__profile__', sheetSize=2.0)
+del mdb.models['flap-design'].sketches['__profile__']
+mdb.models['flap-design'].ConstrainedSketch(name='__profile__', sheetSize=2.0)
+mdb.models['flap-design'].sketches['__profile__'].rectangle(point1=(-0.29, 0.1)
+    , point2=(-0.01, 0.0))
+mdb.models['flap-design'].sketches['__profile__'].ObliqueDimension(textPoint=(
+    -0.47409725189209, 0.0667939186096191), value=0.108, vertex1=
+    mdb.models['flap-design'].sketches['__profile__'].vertices[0], vertex2=
+    mdb.models['flap-design'].sketches['__profile__'].vertices[1])
+mdb.models['flap-design'].Part(dimensionality=THREE_D, name='Part-3', type=
+    DEFORMABLE_BODY)
+mdb.models['flap-design'].parts['Part-3'].BaseShell(sketch=
+    mdb.models['flap-design'].sketches['__profile__'])
+del mdb.models['flap-design'].sketches['__profile__']
+mdb.models['flap-design'].parts.changeKey(fromName='Part-3', toName=
+    'Plate-vert')
+del mdb.models['flap-design'].rootAssembly.features['Plate-2-1']
+mdb.models['flap-design'].rootAssembly.Instance(dependent=OFF, name=
+    'Plate-vert-1', part=mdb.models['flap-design'].parts['Plate-vert'])
+mdb.models['flap-design'].rootAssembly.instances['Plate-vert-1'].translate(
+    vector=(0.318, 0.0, 0.0))
+del mdb.models['flap-design'].parts['Plate-vert']
+mdb.models['flap-design'].rootAssembly.regenerate()
+#* FeatureError: Regeneration failed
+del mdb.models['flap-design'].rootAssembly.features['Plate-vert-1']
+mdb.models['flap-design'].ConstrainedSketch(name='__profile__', sheetSize=2.0)
+mdb.models['flap-design'].sketches['__profile__'].rectangle(point1=(-0.29, 0.1)
+    , point2=(-0.01, -0.1))
+mdb.models['flap-design'].Part(dimensionality=THREE_D, name='Part-3', type=
+    DEFORMABLE_BODY)
+mdb.models['flap-design'].parts['Part-3'].BaseShell(sketch=
+    mdb.models['flap-design'].sketches['__profile__'])
+del mdb.models['flap-design'].sketches['__profile__']
+mdb.models['flap-design'].rootAssembly.Instance(dependent=OFF, name='Part-3-1', 
+    part=mdb.models['flap-design'].parts['Part-3'])
+mdb.models['flap-design'].rootAssembly.instances['Part-3-1'].translate(vector=(
+    0.318, 0.0, 0.0))
+mdb.models['flap-design'].rootAssembly.translate(instanceList=('Part-3-1', ), 
+    vector=(-0.318, 0.0, 0.3))
+mdb.models['flap-design'].ConstrainedSketch(name='__profile__', sheetSize=2.0)
+del mdb.models['flap-design'].sketches['__profile__']
+mdb.models['flap-design'].ConstrainedSketch(name='__profile__', sheetSize=2.0)
+mdb.models['flap-design'].sketches['__profile__'].rectangle(point1=(-0.29, 0.3)
+    , point2=(-0.01, -0.6))
+mdb.models['flap-design'].Part(dimensionality=THREE_D, name='Part-4', type=
+    DEFORMABLE_BODY)
+mdb.models['flap-design'].parts['Part-4'].BaseShell(sketch=
+    mdb.models['flap-design'].sketches['__profile__'])
+del mdb.models['flap-design'].sketches['__profile__']
+mdb.models['flap-design'].rootAssembly.Instance(dependent=OFF, name='Part-4-1', 
+    part=mdb.models['flap-design'].parts['Part-4'])
+mdb.models['flap-design'].rootAssembly.instances['Part-4-1'].translate(vector=(
+    0.318, 0.0, 0.0))
+mdb.models['flap-design'].rootAssembly.translate(instanceList=('Part-4-1', ), 
+    vector=(-0.318, -0.4, 0.3))
+mdb.models['flap-design'].rootAssembly.rotate(angle=-96.34, axisDirection=(
+    -0.28, 0.0, 0.0), axisPoint=(-0.01, -0.1, 0.3), instanceList=('Part-4-1', 
+    ))
+mdb.models['flap-design'].rootAssembly.rotate(angle=-0.00121, axisDirection=(
+    -0.28, 0.0, 0.0), axisPoint=(-0.01, -0.1, 0.3), instanceList=('Part-4-1', 
+    ))
+mdb.models['flap-design'].rootAssembly.rotate(angle=-0.0012, axisDirection=(
+    -0.28, 0.0, 0.0), axisPoint=(-0.01, -0.1, 0.3), instanceList=('Part-4-1', 
+    ))
+mdb.models['flap-design'].rootAssembly.InstanceFromBooleanMerge(domain=GEOMETRY
+    , instances=(mdb.models['flap-design'].rootAssembly.instances['Part-3-1'], 
+    mdb.models['flap-design'].rootAssembly.instances['Part-4-1']), name='flap', 
+    originalInstances=SUPPRESS)
+# Save by Ayan.Haldar on 2024_04_18-14.33.01; build 2021 2020_03_06-14.50.37 167380
+# Save by Ayan.Haldar on 2024_04_18-16.05.11; build 2021 2020_03_06-14.50.37 167380
